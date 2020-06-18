@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Log in form design</title>
+<script src="https://kit.fontawesome.com/4476f74bc9.js" crossorigin="anonymous"></script>
+   
+    <style>
+     
+     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      
+      *{
+        margin:0;
+        padding:0;
+        outline:none;
+        border:0;
+        user-select:none;
+      }
+      
+      body{
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-family:'Poppins', Sans-Serif;
+        background:linear-gradient(45deg,#fc466b,#3f5efb);
+      }
+      
+      .main{
+        position:relative;
+        height:400px;
+        width:800px;
+        border-radius:25px;
+        overflow:hidden;
+        background:#fff;
+        box-shadow: 0 0 20px rgba(0,0,0,.5);
+      }
+      
+      
+      .left-side{
+        position:absolute;
+        left:0;
+        width:400px;
+        height:100%;
+        
+      }
+      .left-side img{
+        width:100%;
+        height:100%;
+      }
+      
+      .right-side{
+        position:absolute;
+        right:0;
+        width:400px ;
+        text-align:center;
+        
+      }
+      
+      .right-side h1{
+        margin:15px 0;
+        
+      }
+      .right-side hr{
+        background:silver;
+        width:30%;
+        height:1px;
+        
+      }
+      
+      .right-side hr:nth-child(1){
+        float:right;
+        margin-right:15px;
+        transform:translateY(40px);
+      }
+      .right-side hr:nth-child(2){
+        float:left;
+        margin-left:15px;
+        transform:translateY(40px);
+      }
+      .right-side input{
+        margin:15px 25px 0 0;
+        width:250px;
+        height:40px;
+        border-radius:30px;
+        background:#eeeeee;
+        border:1px solid #eeeeee;
+        padding-left:45px;
+        letter-spacing:.5px;
+        transition:all .4s;
+      }
+      .right-side input:focus{
+        border:1px solid blue;
+      }
+      
+      .right-side input:valid{
+        border:1px solid green;
+      }
+      .right-side .fas{
+        transform: translateX(35px);
+      }
+      .right-side button{
+        margin:30px 0;
+        background:#1a99ee;
+        color:#f1f1f1;
+        letter-spacing:.5px;
+        width:295px;
+        height:40px;
+        font-size:16px;
+        border-radius:20px;
+        cursor:pointer;
+        transition:.4s;
+      }
+      .right-side button:hover{
+        background:linear-gradient(to right, #fc00ff 0%, #00dbde 51%, #fc00ff 100%);
+        color:black;
+        font-weight:bold;
+      }
+      .right-side .fab{
+        cursor:pointer;
+        width:40px;
+        height:40px;
+        color:#fff;
+        line-height:40px;
+        border-radius:50%;
+        margin:10px 3px;
+      }
+      .fa-facebook-f{
+        background:#0f6faa;
+      }
+      .fa-facebook-f:hover{
+        background:aqua;
+      }
+      
+      .fa-instagram{
+        background:rgb(218,38,92);
+      }
+      
+      .fa-instagram:hover{
+        background:rgb(187,16,60);
+      }
+      .fa-twitter{
+        background:#1d9ff0;
+      }
+      .fa-twitter:hover{
+        background:#1a8fd8;
+      }
+    </style>
+    
+    
+    
+
+    
+    
+  </head>
+  
+  <body>
+    
+    <div class="main">
+      
+      <div class="left-side">
+        
+        <img src="https://www.linkpicture.com/q/skill.jpg">
+      </div>
+      
+      <div class="right-side">
+        
+        <hr><hr>
+        <h1>Sign in</h1>
+        
+        <div>
+         
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Enter your username" required>
+          
+        </div>
+        
+        <div>
+         
+          <i class="fas fa-key"></i>
+          <input type="password" placeholder="Enter your password" required>
+          
+        </div>
+      
+        <button type="submit">Sign in</button>
+      
+        <p>Or login with</p>
+       
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+     
+      </div>
+      
+      
+    
+    </div>
+ 
+    
+  </body>
+  
+</html>
