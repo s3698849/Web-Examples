@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The form element</h1>
+
+<form action=https://titan.csit.rmit.edu.au/~e54061/wp/week03-processing.php
+>
+  <select name="..."> 
+  <option value="mr">Mr.</option>
+  <option value="mrs">Mrs.</option>
+  <option value="miss">Miss</option>
+  <option value="ms">Ms.</option>
+  <option value="dr">Dr.</option>
+</select><br/>
+
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br/>
+  <input type="radio" name="gender" value="male" /> Male<br/>
+  <input type="radio" name="gender" value="female" /> Female<br/>
+  <input type="radio" name="gender" value="other" /> Other<br/>
+<br/>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">    <br/>
+
+    <br/>
+  <label for="password">Password:</label>
+  <input type="password" id="password" value="" /><br/>
+  
+  <br/>
+  <textarea name="text" rows="5" cols="50"> ... </textarea><br/>
+  <br/>  
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50"><br/>
+<br/>
+
+
+  <input type="submit" value="Submit"><br/>
+  <br/>
+  <input type="reset" value="Clear Form"/>
+
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+</body>
+</html>
