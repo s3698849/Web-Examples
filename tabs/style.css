@@ -1,0 +1,106 @@
+body {
+
+    font-family: sans-serif;
+
+    /* https://www.iwm.org.uk/collections/item/object/205191978 */
+
+    background: url(ww1_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.title {
+    margin: 40px 0px;
+    padding: 16px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.line {
+    width: 135px;
+    height: 4px;
+    margin-left: 17px;
+    margin-top: -40px;
+    background: seagreen;
+}
+
+.overall-box {
+
+    margin: 40px;
+    max-width: 1000px;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top: 8%;
+}
+
+div {
+    box-sizing: border-box;
+    transition: all ease-in-out 0.5s;
+}
+
+.heading {
+    background: #313A29;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #60312E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    border-bottom: 0;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+
+}
+
+.heading:last-child {
+    border-right: 2px solid #60312E;
+}
+
+.current-tab {
+    background: #253B60;
+}
+
+#content {
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #60312E;
+    background-color: antiquewhite;
+    opacity: 0.6;
+    /*shadow around the box*/
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, .9), -30px 0 40px rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+}
+
+.tabdata {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    border-top: 0px;
+    padding: 40px;
+    transform: translateY(-100%);
+}
+
+.tabdata.tab-active {
+    display: block;
+    border-top: 0px;
+    transform: translateY(0%);
+    background-color: antiquewhite;
+    opacity: 0.6;
+
+
+}
+
+.tabdata:first-child {
+    position: relative;
+}
