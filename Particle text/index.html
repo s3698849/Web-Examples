@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+   
+   
+
+<canvas id="canvas">Canvas not supported.</canvas>
+<!--<p id="openController"><a href="#">Open Controller</a></p>-->
+<div id="controller">
+  <p id="closeController"><a href="#">Close</a></p>
+  <dl>
+    <dt>
+            <p>Change Text</p>
+          </dt>
+    <dd>
+      <input type="text" id="text" value="Peter Rocks" placeholder="Please input.">
+    </dd>
+    <dt>
+            <p>Composition</p>
+          </dt>
+    <dd>
+      <select id="composition">
+              <option value="source-over">source-over</option>
+              <option value="lighter" selected>lighter</option>
+              <option value="xor">xor</option>
+            </select>
+    </dd>
+    <dt>
+            <p>Font Color</p>
+          </dt>
+    <dd>
+      <input type="color" id="fontColor" value="#FFFFFF">
+    </dd>
+    <dt>
+            <p>Background Color</p>
+          </dt>
+    <dd>
+      <input type="color" id="backgroundColor" value="#000000">
+    </dd>
+    <dt>
+            <p>Flexibility</p>
+          </dt>
+    <dd>
+      <input type="checkbox" id="flexibility" checked>
+    </dd>
+    <dt>
+            <p>Font Random Color</p>
+          </dt>
+    <dd>
+      <input type="checkbox" id="randomFontColor" checked>
+    </dd>
+    <dt>
+            <p>Step</p>
+          </dt>
+    <dd>
+      <input type="range" id="step" min="4" max="50" value="8" step="1">
+    </dd>
+    <dt>
+            <p>Font Size</p>
+          </dt>
+    <dd>
+      <input type="range" id="fontSize" min="1" max="500" value="200" step="10">
+    </dd>
+    <dt>
+            <p>Particle Size</p>
+          </dt>
+    <dd>
+      <input type="range" id="particleSize" min="1" max="50" value="10" step="1">
+    </dd>
+    <dt>
+            <p>Angle</p>
+          </dt>
+    <dd>
+      <input type="range" id="increaseAngle" min="1" max="50" value="3" step="1">
+    </dd>
+  </dl>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
