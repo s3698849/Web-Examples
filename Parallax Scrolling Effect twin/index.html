@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City at night </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="sky.jpg" id="sky" >
+        <img src="mountain.png" id="mountain">
+        <img src="moon.png" id="moon" >
+        <img src="field.png" id="field">
+        <h2 id="text"> Field at night</h2>
+
+
+
+    </section>
+
+    <script type="text/javascript">
+        let sky = document.getElementById("sky");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let field = document.getElementById("field");
+        let text = document.getElementById("text");
+
+
+        window.addEventListener('scroll', function() {
+
+            var value = window.scrollY;
+
+            sky.style.top = value * 0.5 + 'px';
+            moon.style.left = value * 0.5 + 'px';
+            mountain.style.top = -value * 0.10 + 'px';
+            field.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+
+
+        })
+
+    </script>
+</body>
+
+</html>
